@@ -1,27 +1,24 @@
+import Container from "../Container";
+import VmCard from "./element.tsx/VmCard";
+
 const VissionMission = () => {
   return (
-    <section className="px-2 pt-10 lg:px-36">
-      <div className="container mx-auto mb-6 h-full">
-        <div>Visi & Misi</div>
-        <div>
-          <div>
-            <h1>Visi Kami</h1>
-            <p>
-              menjadi pilihan utama dalam menyediakan buket, gift, dan hantaran
-              yang berkualitas, menambah keindahan dalam setiap momen spesial.
-            </p>
-          </div>
-          <div>
-            <h1>Misi Kami</h1>
-            <p>
-              memberikan produk dan layanan dengan kualitas terbaik,
-              mengutamakan kepuasan pelanggan, dan selalu berinovasi dalam
-              desain dan pilihan produk.
-            </p>
-          </div>
-        </div>
+    <Container
+      classParent="pt-0"
+      classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
+    >
+      <h2 className="mb-10 text-center text-2xl font-bold">Visi & Misi</h2>
+      <div className="flex justify-around">
+        <VmCard
+          title="Visi Kami"
+          value="menjadi pilihan utama dalam menyediakan buket, gift, dan hantaran yang berkualitas, menambah keindahan dalam setiap momen spesial."
+        />
+        <VmCard
+          title="Misi Kami"
+          value="memberikan produk dan layanan dengan kualitas terbaik, mengutamakan kepuasan pelanggan, dan selalu berinovasi dalam desain dan pilihan produk."
+        />
       </div>
-    </section>
+    </Container>
   );
 };
 

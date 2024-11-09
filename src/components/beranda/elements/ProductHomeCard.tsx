@@ -1,13 +1,17 @@
 import Image from "next/image";
 import { FC } from "react";
 
-interface ProductCardProps {
+interface ProductHomeCardProps {
   src: string;
   title: string;
   description: string;
 }
 
-const ProductHeroCard: FC<ProductCardProps> = ({ src, title, description }) => {
+const ProductHomeCard: FC<ProductHomeCardProps> = ({
+  src,
+  title,
+  description,
+}) => {
   return (
     <div className="mb-6 flex w-full flex-row overflow-hidden rounded-lg border shadow-md">
       <div className="relative w-1/3">
@@ -28,4 +32,4 @@ const ProductHeroCard: FC<ProductCardProps> = ({ src, title, description }) => {
   );
 };
 
-export default ProductHeroCard;
+export default ProductHomeCard;

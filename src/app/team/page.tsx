@@ -1,5 +1,11 @@
+import HeroTeam from "@/components/team/HeroTeam";
+
 const Team = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <HeroTeam />
+    </>
+  );
 };
 
 export default Team;
