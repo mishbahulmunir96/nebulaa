@@ -19,8 +19,8 @@ const ProductHomeCard: FC<ProductHomeCardProps> = ({
           src={src}
           alt={title}
           className="rounded-l-lg"
-          layout="fill"
-          objectFit="scale-down"
+          fill
+          style={{ objectFit: "scale-down" }}
         />
       </div>
 
