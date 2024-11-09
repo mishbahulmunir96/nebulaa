@@ -1,4 +1,5 @@
 import Container from "../Container";
+import Title from "../elements/Title";
 import TeamCard from "./element.tsx/TeamCard";
 
 const TeamSection = () => {
@@ -7,7 +8,7 @@ const TeamSection = () => {
       classParent="pt-0"
       classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
     >
-      <h2>Team Kami</h2>
+      <Title>Team Kami</Title>
       <div className="grid grid-cols-3 gap-2">
         <TeamCard
           src="/image/jkw.png"

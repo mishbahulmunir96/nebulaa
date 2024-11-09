@@ -2,8 +2,11 @@ import Container from "../Container";
 
 const HeroTeam = () => {
   return (
-    <Container classChildren="text-center ">
-      <h1 className="mb-4 mt-8 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl">
+    <Container
+      classParent="h-screen "
+      classChildren="text-center h-full flex flex-col justify-center"
+    >
+      <h1 className="mb-12 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl">
         "Bersama, Kami Mewujudkan Momen Spesial"
       </h1>
       <p className="mb-8 text-lg font-normal text-gray-500 dark:text-gray-400 md:px-16">

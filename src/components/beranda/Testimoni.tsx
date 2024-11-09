@@ -2,13 +2,15 @@ import Image from "next/image";
 import { TestiCard } from "./elements/TestiCard";
 import { RatingElement } from "./elements/Rating";
 import Container from "../Container";
+import SubTitle from "../elements/SubTitle";
+import Title from "../elements/Title";
 
 const Testimoni = () => {
   return (
     <Container classParent="pt-10 pb-10">
       <div className="text-center">
-        <h3 className="mb-2 font-medium">Ulasan</h3>
-        <h2 className="mb-4 text-2xl font-bold">Apa kata mereka?</h2>
+        <SubTitle>Ulasan</SubTitle>
+        <Title>Apa Kata Mereka</Title>
       </div>
       <div className="flex justify-evenly">
         <div>

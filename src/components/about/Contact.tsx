@@ -2,11 +2,12 @@ import { Button } from "flowbite-react";
 import FormContactGroup from "./element.tsx/FormContactGroup";
 import MessageForm from "./element.tsx/MessageForm";
 import Container from "../Container";
+import Title from "../elements/Title";
 
 const Contact = () => {
   return (
     <Container classParent="md:min-h-screen" classChildren="h-full mb-10">
-      <h2 className="mb-4 text-2xl font-bold">Hubungi Kami</h2>
+      <Title>Hubungi Kami</Title>
       <div className="gap-4 lg:mb-0 lg:grid lg:grid-cols-2">
         <div className="overflow-hidden rounded-lg">
           <iframe

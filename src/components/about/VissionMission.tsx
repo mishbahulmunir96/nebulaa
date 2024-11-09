@@ -1,4 +1,5 @@
 import Container from "../Container";
+import Title from "../elements/Title";
 import VmCard from "./element.tsx/VmCard";
 
 const VissionMission = () => {
@@ -7,7 +8,7 @@ const VissionMission = () => {
       classParent="pt-0"
       classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
     >
-      <h2 className="mb-10 text-center text-2xl font-bold">Visi & Misi</h2>
+      <Title className="text-center">Visi & Misi</Title>
       <div className="flex justify-around">
         <VmCard
           title="Visi Kami"

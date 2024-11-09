@@ -1,14 +1,16 @@
 import Container from "../Container";
+import SubTitle from "../elements/SubTitle";
+import Title from "../elements/Title";
 import ProductHomeCard from "./elements/ProductHomeCard";
 
 const ProductSection = () => {
   return (
     <Container classParent="pb-10">
       <div className="text-center">
-        <h3 className="mb-2 font-medium">Product Kami</h3>
-        <h2 className="mb-4 text-2xl font-bold">
+        <SubTitle>Produk Kami</SubTitle>
+        <Title>
           Dapatkan Product Terbaik Dari Kami Untuk Setiap Momen Spesialmu
-        </h2>
+        </Title>
 
         <ProductHomeCard
           src="/image/overview-bouqet.png"
