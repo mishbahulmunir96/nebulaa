@@ -3,7 +3,7 @@ import { Card } from "flowbite-react";
 export function BlogCard() {
   return (
     <Card
-      className="max-w-sm"
+      className="mb-4 w-full md:max-w-sm"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc="/image/about_me2.png"
     >

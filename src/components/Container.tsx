@@ -14,7 +14,7 @@ const Container: FC<ContainerProps> = ({
   return (
     <section className={`bg-[#FCEED5] px-2 pt-20 md:px-36 ${classParent}`}>
       <div
-        className={`container mx-auto pb-6 text-blue-950 md:mb-0 ${classChildren}`}
+        className={`container mx-auto pb-6 text-gray-900 md:mb-0 ${classChildren}`}
       >
         {children}
       </div>

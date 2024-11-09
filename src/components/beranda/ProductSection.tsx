@@ -5,7 +5,7 @@ import ProductHomeCard from "./elements/ProductHomeCard";
 
 const ProductSection = () => {
   return (
-    <Container classParent="pb-10">
+    <Container classParent=" pt-8 md:pt-20 bg-white">
       <div className="text-center">
         <SubTitle>Produk Kami</SubTitle>
         <Title>

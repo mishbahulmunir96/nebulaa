@@ -17,16 +17,16 @@ const MenuBar: FC<MenuBarProps> = ({ classname }) => {
 
   return (
     <div
-      className={`relative my-5 lg:static lg:flex lg:items-center lg:justify-center ${classname}`}
+      className={`relative my-5 md:static md:flex md:items-center md:justify-center ${classname}`}
     >
-      <div className="text-blue-900 lg:hidden" onClick={toggleMenu}>
+      <div className="md:hidden" onClick={toggleMenu}>
         {isOpen ? <HiX size={24} /> : <HiOutlineMenu size={24} />}
       </div>
 
       <ul
-        className={`${isOpen ? "flex" : "hidden"} absolute -left-2 top-[52px] flex-col rounded-md bg-yellow-400 px-3 py-1 lg:static lg:flex lg:flex-row lg:items-center lg:justify-between lg:bg-transparent`}
+        className={`${isOpen ? "flex" : "hidden"} absolute -left-2 top-[52px] flex-col rounded-md bg-yellow-400 px-3 py-1 md:static md:flex md:flex-row md:items-center md:justify-between md:bg-transparent`}
       >
-        <div className="flex flex-col justify-center pl-1 text-lg font-bold text-blue-950 lg:hidden">
+        <div className="text-md flex flex-col justify-center pl-1 font-bold md:hidden">
           <h3>Menu</h3>
         </div>
         <hr className="border border-slate-300" />

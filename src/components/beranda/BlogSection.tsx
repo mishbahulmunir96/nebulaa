@@ -5,10 +5,10 @@ import { BlogCard } from "./elements/BlogCard";
 
 const BlogSection = () => {
   return (
-    <Container classParent="pt-10 pb-10">
-      <SubTitle>Blogs</SubTitle>
-      <Title>Inspirasi & Tips</Title>
-      <div className="grid grid-cols-3 gap-2">
+    <Container classParent="pt-8 md:pt-20 bg-white">
+      <SubTitle className="text-center">Blogs</SubTitle>
+      <Title className="text-center md:text-left">Inspirasi & Tips</Title>
+      <div className="gap-2 md:grid md:grid-cols-3">
         <BlogCard />
         <BlogCard />
         <BlogCard />

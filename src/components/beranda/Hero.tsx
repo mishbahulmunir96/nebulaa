@@ -8,12 +8,12 @@ const Hero = () => {
       classChildren="md:grid md:grid-cols-[1.2fr_0.8fr] h-full"
     >
       <div className="flex flex-col justify-center">
-        <div>
+        <div className="text-center md:text-left">
           <h1 className="mb-6 text-4xl font-bold leading-snug">
             <span className="text-[56px]">Rangkai Keindahan</span> <br />&
             Kenangan Bersama Kami
           </h1>
-          <p className="font-medium leading-6">
+          <p className="font-medium leading-6 text-gray-700">
             Temukan berbagai pilihan buket bunga, gift istimewa, dan layanan
             penyewaan serta hias box hantaran yang elegan untuk setiap momen
             spesial Anda. Kami menghadirkan produk berkualitas, menjadikan
