@@ -1,19 +1,32 @@
+import { Blog } from "@/types/blog";
 import { Card } from "flowbite-react";
+import Image from "next/image";
+import { FC } from "react";
 
-export function BlogCard() {
+interface BlogCardProps {
+  blog: Blog;
+}
+
+const BlogCard: FC<BlogCardProps> = ({ blog }) => {
   return (
-    <Card
-      className="mb-4 w-full md:max-w-sm"
-      imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc="/image/about_me2.png"
-    >
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
+    <Card className="mb-4 w-full md:max-w-sm">
+      <div className="relative h-[200px] w-full">
+        <Image
+          src={blog.thumbnail}
+          alt={blog.title}
+          style={{ objectFit: "cover" }}
+          fill
+        />
+      </div>
+
+      <h5 className="line-clamp-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        {blog.title}
       </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far,
-        in reverse chronological order.
+      <p className="line-clamp-4 font-normal text-gray-700 dark:text-gray-400">
+        {blog.description}
       </p>
     </Card>
   );
-}
+};
+
+export default BlogCard;

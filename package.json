@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "contentful": "^11.2.1",
     "flowbite-react": "^0.10.2",
     "next": "14.2.16",
     "react": "^18",

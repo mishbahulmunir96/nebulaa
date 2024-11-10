@@ -8,7 +8,7 @@ const Hero = () => {
       classChildren="md:grid md:grid-cols-[1.2fr_0.8fr] h-full"
     >
       <div className="flex flex-col justify-center">
-        <div className="text-center md:text-left">
+        <div className="text-center">
           <h1 className="mb-6 text-4xl font-bold leading-snug">
             <span className="text-[56px]">Rangkai Keindahan</span> <br />&
             Kenangan Bersama Kami
