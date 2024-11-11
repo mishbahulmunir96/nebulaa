@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Container from "../Container";
+import Box from "../Box";
 
 const Hero = () => {
   return (
     <Container
-      classParent="md:h-screen"
-      classChildren="md:grid md:grid-cols-[1.2fr_0.8fr] h-full"
+      classParent="md:h-screen relative overflow-hidden"
+      classChildren="md:grid md:grid-cols-[1.2fr_0.8fr] h-full "
     >
-      <div className="flex flex-col justify-center">
+      <div className="z-40 flex flex-col justify-center">
         <div className="text-center">
           <h1 className="mb-6 text-4xl font-bold leading-snug">
             <span className="text-[56px]">Rangkai Keindahan</span> <br />&
@@ -23,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center md:flex-col md:items-end">
+      <div className="z-40 flex justify-center md:flex-col md:items-end">
         <div>
           <Image
             src="/image/logo-nebula-hero.svg"
@@ -33,6 +34,9 @@ const Hero = () => {
           />
         </div>
       </div>
+      <Box className="-top-[23rem] left-16 origin-top-left rotate-[20deg]" />
+      <Box className="-bottom-12 right-0 z-30 h-[500px] w-[500px] origin-top-left rotate-[20deg]" />
+      <Box className="-bottom-24 right-[390px] z-20 h-[500px] w-[200px] origin-top-left rotate-[8deg] bg-blue-950" />
     </Container>
   );
 };

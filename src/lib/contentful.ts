@@ -14,10 +14,16 @@ const client = createClient({
 });
 
 // mengambil banyak data sekaligus
-export const getEntries = async () => {
+export const getEntries = async (page: number = 1) => {
   try {
+    const limit = 3;
+
+    const skip = (page - 1) * limit;
     const response = await client.getEntries({
       content_type: "blogNebulaa",
+      order: ["-fields.createdAt"],
+      limit,
+      skip,
     });
 
     const blogs = response.items.map((blog: ResponseEntry) => ({
@@ -31,7 +37,13 @@ export const getEntries = async () => {
       content: blog.fields.content,
     }));
 
-    return blogs;
+    return {
+      data: blogs,
+      meta: {
+        total: response.total,
+        limit: response.limit,
+      },
+    };
   } catch (error) {
     console.log(error);
   }
