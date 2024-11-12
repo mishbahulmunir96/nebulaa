@@ -1,6 +1,6 @@
 import { Button } from "flowbite-react";
-import FormContactGroup from "./element.tsx/FormContactGroup";
-import MessageForm from "./element.tsx/MessageForm";
+import FormContactGroup from "./element/FormContactGroup";
+import MessageForm from "./element/MessageForm";
 import Container from "../Container";
 import Title from "../elements/Title";
 

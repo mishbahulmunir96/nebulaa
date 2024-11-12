@@ -1,7 +1,7 @@
-import BlogSection from "@/components/beranda/BlogSection";
-import Hero from "@/components/beranda/Hero";
-import ProductSection from "@/components/beranda/ProductSection";
-import TestiSection from "@/components/beranda/TestiSection";
+import BlogSection from "@/components/home/BlogSection";
+import Hero from "@/components/home/Hero";
+import ProductSection from "@/components/home/ProductSection";
+import TestiSection from "@/components/home/TestiSection";
 import Pagination from "@/components/Pagination";
 import { getEntries } from "@/lib/contentful";
 import { FC } from "react";

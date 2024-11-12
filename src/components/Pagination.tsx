@@ -29,7 +29,7 @@ const Pagination: FC<PaginationProps> = ({ limit, total }) => {
 
   return (
     <nav
-      className="mt-8 flex items-center justify-center px-4 md:px-6"
+      className="mb-8 flex items-center justify-center px-4 md:px-6"
       aria-label="Pagination"
     >
       <div className="flex justify-between md:w-[35%]">

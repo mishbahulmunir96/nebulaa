@@ -1,6 +1,6 @@
 import Container from "../Container";
 import Title from "../elements/Title";
-import VmCard from "./element.tsx/VmCard";
+import VmCard from "./element/VmCard";
 
 const VissionMission = () => {
   return (

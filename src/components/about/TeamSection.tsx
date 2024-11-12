@@ -1,6 +1,6 @@
 import Container from "../Container";
 import Title from "../elements/Title";
-import TeamCard from "./element.tsx/TeamCard";
+import TeamCard from "./element/TeamCard";
 
 const TeamSection = () => {
   return (

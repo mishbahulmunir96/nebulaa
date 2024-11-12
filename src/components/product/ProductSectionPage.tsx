@@ -4,7 +4,7 @@ import ListProductPage from "./elements/ListProductPage";
 const ProductSectionPage = () => {
   return (
     <div className="px-4">
-      <div className="flex w-full justify-between">
+      <div className="flex w-full justify-between py-12">
         <FilterList />
         <ListProductPage />
       </div>
