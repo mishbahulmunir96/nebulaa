@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { poppins } from "./utils/font";
 import Footer from "@/components/Footer";
+import Box from "@/components/Box";
 
 export const metadata: Metadata = {
   title: "Nebulaa | Bouqet, Gift, & Hantaran",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Box className="-top-[23rem] left-16 origin-top-left rotate-[20deg]" />
       </body>
     </html>
   );

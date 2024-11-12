@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed z-50 flex h-20 w-full items-center justify-center px-2 transition-all lg:px-36 ${isBlured ? "bg-yellow-200/70 backdrop-blur-md" : "bg-transparent"}`}
+      className={`fixed z-50 flex h-20 w-full items-center justify-center px-2 transition-all lg:px-36 ${isBlured ? "bg-blue-800/50 backdrop-blur-md" : "bg-transparent"}`}
     >
       <nav className="container mx-auto flex items-center justify-between">
         <Logo classname="order-2 lg:order-none"></Logo>

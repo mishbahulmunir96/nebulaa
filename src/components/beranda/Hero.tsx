@@ -34,7 +34,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <Box className="-top-[23rem] left-16 origin-top-left rotate-[20deg]" />
+
       <Box className="-bottom-12 right-0 z-30 h-[500px] w-[500px] origin-top-left rotate-[20deg]" />
       <Box className="-bottom-24 right-[390px] z-20 h-[500px] w-[200px] origin-top-left rotate-[8deg] bg-blue-950" />
     </Container>
