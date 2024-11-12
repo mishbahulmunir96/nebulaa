@@ -1,4 +1,4 @@
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./(home)/components/Dashboard";
 
 interface HomeProps {
   searchParams: { [key: string]: string };
