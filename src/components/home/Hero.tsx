@@ -14,7 +14,7 @@ const Hero = () => {
             <span className="text-[56px]">Rangkai Keindahan</span> <br />&
             Kenangan Bersama Kami
           </h1>
-          <p className="font-medium leading-6 text-gray-700">
+          <p className="font-medium leading-6 text-blue-700">
             Temukan berbagai pilihan buket bunga, gift istimewa, dan layanan
             penyewaan serta hias box hantaran yang elegan untuk setiap momen
             spesial Anda. Kami menghadirkan produk berkualitas, menjadikan
