@@ -9,7 +9,7 @@ const Logo: FC<LogoProps> = ({ classname }) => {
   return (
     <div className={`w-32 lg:w-40 ${classname}`}>
       <Link href={"/"}>
-        <img src="/image/logo-nebulaa.svg" alt="nebula_logo" />
+        <img src="/images/logo-nebulaa.svg" alt="nebula_logo" />
       </Link>
     </div>
   );

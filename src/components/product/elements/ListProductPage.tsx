@@ -2,30 +2,27 @@ import CardProductPage from "./CardProductPage";
 
 const ListProductPage = () => {
   return (
-    <div className="grid w-5/6 grid-cols-3 justify-between gap-4">
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
-      <CardProductPage />
+    <div className="grid w-5/6 grid-cols-1 justify-between gap-4 md:grid-cols-3">
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
+      <CardProductPage src="/images/buket.jpg" />
     </div>
   );
 };

@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="z-40 flex justify-center md:flex-col md:items-end">
         <div>
           <Image
-            src="/image/logo-nebula-hero.svg"
+            src="/images/logo-nebula-hero.svg"
             alt="nebulaa"
             width={400}
             height={400}

@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { TestiCard } from "./elements/TestiCard";
-import { RatingElement } from "./elements/Rating";
 import Container from "../Container";
 import SubTitle from "../elements/SubTitle";
 import Title from "../elements/Title";
@@ -14,8 +11,8 @@ const TestiSection = () => {
         <Title>Apa Kata Mereka</Title>
       </div>
       <div className="flex flex-col md:flex-row md:justify-evenly">
-        <TestiFragment src="/image/jkw.png" alt="jkw" name="Ir. Joko Wi" />
-        <TestiFragment src="/image/jkw.png" alt="jkw" name="Ir. Joko Wi" />
+        <TestiFragment src="/images/jkw.png" alt="jkw" name="Ir. Joko Wi" />
+        <TestiFragment src="/images/jkw.png" alt="jkw" name="Ir. Joko Wi" />
       </div>
     </Container>
   );

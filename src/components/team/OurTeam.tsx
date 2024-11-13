@@ -8,19 +8,19 @@ const OurTeam = () => {
       <Title className="text-center">Team Kami</Title>
       <div className="grid grid-cols-3 gap-4">
         <OurTeamCard
-          src="/image/jkw.png"
+          src="/images/jkw.png"
           alt="jkw"
           name="Ir. Joko Widodo"
           position="CEO"
         />
         <OurTeamCard
-          src="/image/jkw.png"
+          src="/images/jkw.png"
           alt="jkw"
           name="Ir. Joko Widodo"
           position="CEO"
         />
         <OurTeamCard
-          src="/image/jkw.png"
+          src="/images/jkw.png"
           alt="jkw"
           name="Ir. Joko Widodo"
           position="CEO"
