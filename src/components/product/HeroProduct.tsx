@@ -11,7 +11,7 @@ const HeroProduct = () => {
       <div className="flex md:w-full">
         <div className="">
           <Image
-            src="/images/hero-product-page.svg"
+            src="/images/hero-product-page.webp"
             alt="perkumpulan buket-buket"
             width={500}
             height={300}

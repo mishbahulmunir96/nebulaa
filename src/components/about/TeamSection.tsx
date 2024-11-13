@@ -11,20 +11,20 @@ const TeamSection = () => {
       <Title>Team Kami</Title>
       <div className="grid grid-cols-3 gap-2">
         <TeamCard
-          src="/image/jkw.png"
-          name="Joko Mulyono"
+          src="/images/pichai.jpeg"
+          name="Sundar Pichai"
           position="Co-Founder"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique deserunt quisquam, ratione non quaerat!"
         />
         <TeamCard
-          src="/image/jkw.png"
-          name="Joko Mulyono"
+          src="/images/pichai.jpeg"
+          name="Sundar Pichai"
           position="Co-Founder"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique deserunt quisquam, ratione non quaerat!"
         />
         <TeamCard
-          src="/image/jkw.png"
-          name="Joko Mulyono"
+          src="/images/pichai.jpeg"
+          name="Sundar Pichai"
           position="Co-Founder"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique deserunt quisquam, ratione non quaerat!"
         />

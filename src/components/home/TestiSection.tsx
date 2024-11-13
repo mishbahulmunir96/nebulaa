@@ -11,8 +11,8 @@ const TestiSection = () => {
         <Title>Apa Kata Mereka</Title>
       </div>
       <div className="flex flex-col md:flex-row md:justify-evenly">
-        <TestiFragment src="/images/jkw.png" alt="jkw" name="Ir. Joko Wi" />
-        <TestiFragment src="/images/jkw.png" alt="jkw" name="Ir. Joko Wi" />
+        <TestiFragment src="/images/pichai.jpeg" alt="jkw" name="Ir. Joko Wi" />
+        <TestiFragment src="/images/pichai.jpeg" alt="jkw" name="Ir. Joko Wi" />
       </div>
     </Container>
   );

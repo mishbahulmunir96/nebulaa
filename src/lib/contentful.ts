@@ -49,12 +49,39 @@ export const getEntries = async (page: number = 1) => {
   }
 };
 
-// mengambil satu data saja
-// export const getEntry = async (entryId: string) => {
-//   try {
-//     const response = await client.getEntry(entryId);
-//     return response;
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
+interface ProductFields {
+  title: string;
+  category: string;
+  description: string;
+  thumbnail: {
+    fields: {
+      file: {
+        url: string;
+      };
+    };
+  };
+  price: number;
+  rating?: number;
+}
+
+export const getProducts = async () => {
+  try {
+    const response = await client.getEntries({
+      content_type: "product",
+    });
+
+    const products = response.items.map((product: ResponseEntry) => ({
+      entryId: product.sys.id,
+      title: product.fields.title,
+      description: product.fields.description,
+      thumbnail: "https:" + product.fields.thumbnail.fields.file.url,
+      price: product.fields.price,
+      rating: product.fields.rating,
+    }));
+
+    return products;
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    return [];
+  }
+};
