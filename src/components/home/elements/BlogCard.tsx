@@ -10,7 +10,7 @@ interface BlogCardProps {
 const BlogCard: FC<BlogCardProps> = ({ blog }) => {
   return (
     <Card className="mb-4 w-full md:max-w-sm">
-      <div className="relative h-[200px] w-full">
+      <div className="relative h-[200px] w-full overflow-hidden rounded-md">
         <Image
           src={blog.thumbnail}
           alt={blog.title}

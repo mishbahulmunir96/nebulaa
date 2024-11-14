@@ -70,7 +70,7 @@ const OurTeam = () => {
   return (
     <Container>
       <Title className="text-center">Team Kami</Title>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
         {teamMembers.map((member, index) => (
           <OurTeamCard
             key={index}
