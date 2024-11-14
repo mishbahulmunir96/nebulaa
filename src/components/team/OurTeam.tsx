@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Container from "../Container";
 import Title from "../elements/Title";
 import OurTeamCard from "./elements/OurTeamCard";
-import { timeStamp } from "console";
 
 // Definisikan interface untuk anggota tim
 interface TeamMember {
