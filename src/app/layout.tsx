@@ -37,7 +37,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <Box className="-top-[24rem] left-8 origin-top-left rotate-[20deg]" />
+        <Box className="-top-[25rem] left-6 origin-top-left rotate-[20deg] md:-top-[24rem] md:left-10" />
       </body>
     </html>
   );
