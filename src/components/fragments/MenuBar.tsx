@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import Menu from "../elements/Menu";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 
@@ -10,10 +10,27 @@ interface MenuBarProps {
 
 const MenuBar: FC<MenuBarProps> = ({ classname }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const menuRef = useRef<HTMLUListElement>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    console.log("Clicked outside:", event.target);
+    console.log("MenuRef current:", menuRef.current);
+
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div
@@ -24,12 +41,9 @@ const MenuBar: FC<MenuBarProps> = ({ classname }) => {
       </div>
 
       <ul
+        ref={menuRef}
         className={`${isOpen ? "flex" : "hidden"} absolute -left-2 top-[52px] flex-col rounded-md bg-yellow-400 px-3 py-1 md:static md:flex md:flex-row md:items-center md:justify-between md:bg-transparent`}
       >
-        <div className="text-md flex flex-col justify-center pl-1 font-bold md:hidden">
-          <h3>Menu</h3>
-        </div>
-        <hr className="border border-slate-300" />
         <Menu href={"/"}>Beranda</Menu>
         <Menu href={"/about"}>About</Menu>
         <Menu href={"/product"}>Product</Menu>
