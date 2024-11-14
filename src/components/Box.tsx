@@ -7,7 +7,7 @@ interface BoxProps {
 const Box: FC<BoxProps> = ({ className }) => {
   return (
     <div
-      className={`absolute h-[400px] w-[400px] rounded-[70px] bg-amber-200 ${className}`}
+      className={`absolute h-[400px] w-[400px] rounded-[100px] bg-amber-200 ${className}`}
     ></div>
   );
 };
