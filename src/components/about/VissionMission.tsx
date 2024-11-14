@@ -9,7 +9,7 @@ const VissionMission = () => {
       classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
     >
       <Title className="text-center">Visi & Misi</Title>
-      <div className="flex justify-around">
+      <div className="flex flex-col gap-4 md:flex-row md:justify-around">
         <VmCard
           title="Visi Kami"
           value="menjadi pilihan utama dalam menyediakan buket, gift, dan hantaran yang berkualitas, menambah keindahan dalam setiap momen spesial."

@@ -5,15 +5,22 @@ import { FC } from "react";
 interface TeamCardProps {
   src: string;
   name: string;
+  alt: string;
   position: string;
   description: string;
 }
-const TeamCard: FC<TeamCardProps> = ({ src, name, position, description }) => {
+const TeamCard: FC<TeamCardProps> = ({
+  src,
+  name,
+  alt,
+  position,
+  description,
+}) => {
   return (
     <Card className="max-w-sm">
-      <div className="flex gap-1">
+      <div className="flex flex-col items-center gap-4 md:flex-row">
         <Image
-          alt="Bonnie image"
+          alt={alt}
           height="96"
           src={src}
           width="96"
@@ -27,7 +34,7 @@ const TeamCard: FC<TeamCardProps> = ({ src, name, position, description }) => {
           <p>{position}</p>
         </div>
       </div>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
+      <p className="line-clamp-4 font-normal text-gray-700 dark:text-gray-400">
         {description}
       </p>
     </Card>

@@ -67,12 +67,13 @@ const TeamSection = () => {
       classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
     >
       <Title>Team Kami</Title>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
         {teamMembers.map((member, index) => (
           <TeamCard
             key={index} // Setiap card harus memiliki key unik
             src={member.src}
             name={member.name}
+            alt={member.name}
             position={member.position}
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique deserunt quisquam, ratione non quaerat!"
           />
