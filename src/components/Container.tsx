@@ -12,7 +12,7 @@ const Container: FC<ContainerProps> = ({
   children,
 }) => {
   return (
-    <section className={`bg-[#FCEED5] px-2 pt-20 md:px-36 ${classParent}`}>
+    <section className={`px-2 pt-20 md:px-36 ${classParent}`}>
       <div
         className={`container mx-auto pb-6 text-gray-900 md:mb-0 ${classChildren}`}
       >

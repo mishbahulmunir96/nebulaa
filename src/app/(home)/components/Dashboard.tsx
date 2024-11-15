@@ -2,7 +2,6 @@ import BlogSection from "@/components/home/BlogSection";
 import Hero from "@/components/home/Hero";
 import ProductSection from "@/components/home/ProductSection";
 import TestiSection from "@/components/home/TestiSection";
-import Pagination from "@/components/Pagination";
 import { getEntries } from "@/lib/contentful";
 import { FC } from "react";
 
@@ -22,8 +21,12 @@ const Dashboard: FC<DashboardProps> = async ({ page }) => {
       <Hero />
       <ProductSection />
       <TestiSection />
-      <BlogSection blogs={blogs.data} />
-      <Pagination limit={blogs.meta.limit} total={blogs.meta.total} />
+      {/* Pass total dan limit ke BlogSection */}
+      <BlogSection
+        blogs={blogs.data}
+        total={blogs.meta.total}
+        limit={blogs.meta.limit}
+      />
     </>
   );
 };

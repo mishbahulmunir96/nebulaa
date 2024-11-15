@@ -29,7 +29,7 @@ const ProductSectionPage: FC = () => {
   }, []);
 
   return (
-    <div className="px-4">
+    <div className="bg-slate-200 px-4">
       <div className="flex w-full justify-between py-12">
         <FilterList />
         <ListProductPage products={products} />

@@ -4,14 +4,17 @@ import SubTitle from "../elements/SubTitle";
 import Title from "../elements/Title";
 import { Blog } from "@/types/blog";
 import BlogCard from "./elements/BlogCard";
+import Pagination from "@/components/Pagination";
 
 interface BlogSectionProps {
   blogs: Blog[];
+  total: number; // Tambahkan total
+  limit: number; // Tambahkan limit
 }
 
-const BlogSection: FC<BlogSectionProps> = ({ blogs }) => {
+const BlogSection: FC<BlogSectionProps> = ({ blogs, total, limit }) => {
   return (
-    <Container classParent="pt-8 md:pt-20 bg-white">
+    <Container classParent="pt-8 md:pt-20 bg-slate-200 ">
       <SubTitle className="text-center md:text-left">Blogs</SubTitle>
       <Title className="text-center md:text-left">Inspirasi & Tips</Title>
       <div className="gap-2 md:grid md:grid-cols-3">
@@ -19,6 +22,8 @@ const BlogSection: FC<BlogSectionProps> = ({ blogs }) => {
           <BlogCard key={index} blog={blog} />
         ))}
       </div>
+      {/* Pindahkan komponen Pagination ke sini */}
+      <Pagination limit={limit} total={total} />
     </Container>
   );
 };

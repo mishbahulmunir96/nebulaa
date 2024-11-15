@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 10) {
         setIsBlured(true);
       } else {
         setIsBlured(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed z-50 flex h-20 w-full items-center justify-center px-2 transition-all lg:px-36 ${isBlured ? "bg-blue-800/50 backdrop-blur-md" : "bg-transparent"}`}
+      className={`fixed z-50 flex h-20 w-full items-center justify-center px-2 transition-all duration-300 lg:px-36 ${isBlured ? "bg-white/40 shadow-md backdrop-blur-md" : "bg-transparent"}`}
     >
       <nav className="container mx-auto flex h-full items-center justify-between">
         <Logo classname="order-2 lg:order-none"></Logo>
