@@ -42,7 +42,7 @@ const MenuBar: FC<MenuBarProps> = ({ classname }) => {
 
       <ul
         ref={menuRef}
-        className={`${isOpen ? "flex" : "hidden"} absolute -left-2 top-[52px] flex-col rounded-md bg-yellow-400 px-3 py-1 md:static md:flex md:flex-row md:items-center md:justify-between md:bg-transparent`}
+        className={`${isOpen ? "flex" : "hidden"} absolute -left-2 top-[52px] flex-col rounded-md bg-white px-3 py-1 md:static md:flex md:flex-row md:items-center md:justify-between md:bg-transparent`}
       >
         <Menu href={"/"}>Beranda</Menu>
         <Menu href={"/about"}>About</Menu>
