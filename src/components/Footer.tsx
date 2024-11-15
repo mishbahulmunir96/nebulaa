@@ -5,9 +5,9 @@ import SocialMedia from "./fragments/SocialMedia";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FCEED5] px-2 lg:px-36">
+    <footer className="bg-[#FCEED5] px-2 md:px-36">
       <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-between border-b border-slate-500 py-4 lg:flex-row lg:py-8">
+        <div className="flex flex-col items-center justify-between border-b border-slate-500 py-4 md:flex-row md:py-8">
           <FooterMenu />
           <SocialMedia className="w-full justify-around md:w-1/3" />
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="absolute left-[38%] top-2 md:static">
             <Logo />
           </div>
-          <div className="mt-3 flex w-full justify-between px-4 md:mt-0 md:w-1/3">
+          <div className="mt-3 flex w-full justify-between px-4 text-slate-600 md:mt-0 md:w-1/3">
             <Link href="/">Terms of Service</Link>
             <Link href="/">Privacy Policy</Link>
           </div>
