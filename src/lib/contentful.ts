@@ -85,3 +85,22 @@ export const getProducts = async () => {
     return [];
   }
 };
+
+export const getEntry = async (entryId: string) => {
+  try {
+    const response: ResponseEntry = await client.getEntry(entryId);
+
+    return {
+      entryId: response.sys.id,
+      title: response.fields.title,
+      description: response.fields.description,
+      thumbnail: "https:" + response.fields.thumbnail.fields.file.url,
+      author: response.fields.author,
+      category: response.fields.category,
+      createdAt: response.fields.createdAt,
+      content: response.fields.content,
+    };
+  } catch (error) {
+    console.log(error);
+  }
+};

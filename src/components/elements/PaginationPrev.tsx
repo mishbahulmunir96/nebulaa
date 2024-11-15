@@ -7,7 +7,7 @@ interface PaginationPrevProps {
 const PaginationPrev: FC<PaginationPrevProps> = ({ onClick }) => {
   return (
     <button
-      className="relative inline-flex items-center rounded-md border border-gray-300 bg-slate-50 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+      className="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
       onClick={onClick}
     >
       <svg

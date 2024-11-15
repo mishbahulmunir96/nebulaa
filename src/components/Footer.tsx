@@ -11,14 +11,14 @@ const Footer = () => {
           <FooterMenu />
           <SocialMedia className="w-full justify-around md:w-1/3" />
         </div>
-        <div className="relative flex flex-col items-center justify-between pb-4 pt-20 md:static md:flex-row md:py-4">
+        <div className="relative flex flex-col items-center justify-between pb-4 pt-20 text-slate-600 md:static md:flex-row md:py-4">
           <div>
             <p className="flex">&copy; 2024 Nebulaa. All rights reserved</p>
           </div>
           <div className="absolute left-[38%] top-2 md:static">
             <Logo />
           </div>
-          <div className="mt-3 flex w-full justify-between px-4 text-slate-600 md:mt-0 md:w-1/3">
+          <div className="mt-3 flex w-full justify-between px-4 md:mt-0 md:w-1/3">
             <Link href="/">Terms of Service</Link>
             <Link href="/">Privacy Policy</Link>
           </div>
