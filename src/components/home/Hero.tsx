@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Container from "../Container";
-import Box from "../Box";
+import SocialMedia from "../fragments/SocialMedia";
+import { Button } from "flowbite-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -22,6 +24,15 @@ const Hero = () => {
             kami dan rasakan layanan terbaik untuk menciptakan kenangan yang tak
             terlupakan.
           </p>
+          <div className="mb-10 mt-8 flex w-full flex-col items-center justify-around gap-8 md:mb-0 md:flex-row">
+            <SocialMedia className="w-full justify-around md:w-1/2 md:gap-16" />
+
+            <Link href="/product">
+              <Button pill className="flex items-center px-1 py-1 font-bold">
+                Lihat Produk &nbsp; &gt;
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="z-40 flex justify-center md:flex-col md:items-end">

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between border-b border-slate-500 py-4 lg:flex-row lg:py-8">
           <FooterMenu />
-          <SocialMedia />
+          <SocialMedia className="w-full justify-around md:w-1/3" />
         </div>
         <div className="relative flex flex-col items-center justify-between pb-4 pt-20 md:static md:flex-row md:py-4">
           <div>
