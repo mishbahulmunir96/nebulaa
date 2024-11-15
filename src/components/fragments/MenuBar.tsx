@@ -37,7 +37,11 @@ const MenuBar: FC<MenuBarProps> = ({ classname }) => {
       className={`relative my-5 md:static md:flex md:items-center md:justify-center ${classname}`}
     >
       <div className="md:hidden" onClick={toggleMenu}>
-        {isOpen ? <HiX size={24} /> : <HiOutlineMenu size={24} />}
+        {isOpen ? (
+          <HiX size={24} className="text-slate-600" />
+        ) : (
+          <HiOutlineMenu size={24} className="text-slate-600" />
+        )}
       </div>
 
       <ul

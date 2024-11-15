@@ -39,7 +39,7 @@ const SearchBar: FC<SearchBarProps> = ({ classname }) => {
         className="p-0 font-bold text-blue-900 lg:absolute lg:right-40"
         onClick={handleSearchClick}
       >
-        <LuSearch size={24} />
+        <LuSearch size={24} className="text-slate-600" />
       </button>
     </div>
   );

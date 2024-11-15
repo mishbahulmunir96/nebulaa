@@ -23,7 +23,7 @@ const SocialMedia: FC<SocialMediaProps> = ({ className }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaWhatsapp size={32} />
+        <FaWhatsapp size={32} className="text-slate-950" />
       </a>
 
       <a
@@ -31,7 +31,7 @@ const SocialMedia: FC<SocialMediaProps> = ({ className }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <BsFacebook size={32} />
+        <BsFacebook size={32} className="text-slate-950" />
       </a>
     </div>
   );
