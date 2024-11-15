@@ -15,7 +15,7 @@ const SocialMedia: FC<SocialMediaProps> = ({ className }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GrInstagram size={32} />
+        <GrInstagram size={32} className="text-slate-950" />
       </a>
 
       <a
