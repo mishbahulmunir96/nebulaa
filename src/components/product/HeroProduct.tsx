@@ -5,8 +5,8 @@ import Container from "../Container";
 const HeroProduct = () => {
   return (
     <Container
-      classParent="h-screen pt-32"
-      classChildren="text-center  bg-[#FCEED5] rounded-xl pt-12 pb-12 px-8 relative overflow-hidden md:text-slate-200 bg-amber-200 h-[70vh]"
+      classParent="h-screen pt-32 bg-[#FCEED5]"
+      classChildren="text-center rounded-xl pt-12 pb-12 px-8 relative overflow-hidden md:text-slate-200 bg-amber-200 h-[70vh]"
     >
       <div className="flex md:w-full">
         <div className="">

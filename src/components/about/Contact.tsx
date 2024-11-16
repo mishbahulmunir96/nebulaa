@@ -6,7 +6,10 @@ import Title from "../elements/Title";
 
 const Contact = () => {
   return (
-    <Container classParent="md:min-h-screen" classChildren="h-full pb-10">
+    <Container
+      classParent="md:min-h-screen bg-slate-200"
+      classChildren="h-full pb-10"
+    >
       <Title>Hubungi Kami</Title>
       <div className="gap-4 lg:mb-0 lg:grid lg:grid-cols-2">
         <div className="h-[300px] overflow-hidden rounded-lg md:h-full">

@@ -7,7 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <Container
-      classParent=" bg-[#FCEED5] md:h-screen relative overflow-hidden"
+      classParent="bg-[#FCEED5] md:h-screen relative overflow-hidden"
       classChildren="md:grid md:grid-cols-[1.2fr_0.8fr] h-full "
     >
       <div className="z-40 flex flex-col justify-center">

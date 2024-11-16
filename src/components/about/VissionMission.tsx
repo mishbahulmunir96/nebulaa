@@ -5,8 +5,8 @@ import VmCard from "./element/VmCard";
 const VissionMission = () => {
   return (
     <Container
-      classParent="pt-0"
-      classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
+      classParent="pt-10 pb-10 bg-slate-200"
+      classChildren="h-full rounded-lg bg-[#FCEED5] px-4 pt-10 pb-10"
     >
       <Title className="text-center">Visi & Misi</Title>
       <div className="flex flex-col gap-4 md:flex-row md:justify-around">

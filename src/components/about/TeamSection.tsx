@@ -63,7 +63,7 @@ const TeamSection = () => {
 
   return (
     <Container
-      classParent="pt-0"
+      classParent="pt-0 bg-slate-200"
       classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
     >
       <Title>Team Kami</Title>
