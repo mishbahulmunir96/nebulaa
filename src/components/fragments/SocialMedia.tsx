@@ -15,6 +15,7 @@ const SocialMedia: FC<SocialMediaProps> = ({ className }) => {
         href="https://www.instagram.com/nebulaa_craft/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Kunjungi Instagram Nebula Craft"
       >
         <GrInstagram size={32} className="text-slate-950" />
       </Link>
@@ -23,6 +24,7 @@ const SocialMedia: FC<SocialMediaProps> = ({ className }) => {
         href="https://api.whatsapp.com/send/?phone=6285225126631&text&type=phone_number&app_absent=0"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Chat dengan Nebula Craft"
       >
         <FaWhatsapp size={32} className="text-slate-950" />
       </Link>
@@ -31,6 +33,7 @@ const SocialMedia: FC<SocialMediaProps> = ({ className }) => {
         href="https://www.facebook.com"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Kunjungi Facebook Nebula Craft"
       >
         <BsFacebook size={32} className="text-slate-950" />
       </Link>

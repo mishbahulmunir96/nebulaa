@@ -38,6 +38,7 @@ const SearchBar: FC<SearchBarProps> = ({ classname }) => {
       <button
         className="p-0 font-bold text-blue-900 lg:absolute lg:right-40"
         onClick={handleSearchClick}
+        aria-label="Cari yang anda butuhkan"
       >
         <LuSearch size={24} className="text-slate-600" />
       </button>
