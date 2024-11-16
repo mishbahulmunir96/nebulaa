@@ -7,7 +7,7 @@ const VmCard: FC<VmCardProps> = ({ title, value }) => {
   return (
     <div className="max-w-sm overflow-hidden rounded-lg bg-amber-200">
       <div className="bg-blue-950 px-5 py-2">
-        <h1 className="text-xl font-medium tracking-tight text-slate-300">
+        <h1 className="text-xl font-medium tracking-tight text-slate-200">
           {title}
         </h1>
       </div>

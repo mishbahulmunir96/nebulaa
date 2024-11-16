@@ -11,15 +11,7 @@ interface TeamMember {
   position: string;
 }
 
-const positions = [
-  "Co-Founder",
-  "CEO",
-  "CTO",
-  "Manager",
-  "Kurir 1",
-  "Kurir 2",
-  // Tambahkan posisi lain jika perlu
-];
+const positions = ["Co-Founder", "CEO", "CTO", "Manager", "Kurir 1", "Kurir 2"];
 
 const fetchTeamMembers = async () => {
   try {
@@ -39,10 +31,10 @@ const fetchTeamMembers = async () => {
     };
 
     localStorage.setItem("teamMembers", JSON.stringify(dataToStore));
-    return members; // Mengembalikan anggota tim
+    return members;
   } catch (error) {
     console.error(error);
-    return []; // Mengembalikan array kosong jika terjadi kesalahan
+    return [];
   }
 };
 
@@ -62,15 +54,12 @@ const TeamSection = () => {
   }, []);
 
   return (
-    <Container
-      classParent="pt-0 bg-slate-200"
-      classChildren="h-full rounded-lg bg-pink-200 px-4 pt-10 pb-10"
-    >
-      <Title>Team Kami</Title>
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
+    <Container classParent="pt-0 bg-white" classChildren="h-full pt-16 pb-16">
+      <Title className="text-center md:text-left">Team Kami</Title>
+      <div className="grid grid-cols-2 gap-2 p-0 md:grid-cols-3">
         {teamMembers.map((member, index) => (
           <TeamCard
-            key={index} // Setiap card harus memiliki key unik
+            key={index}
             src={member.src}
             name={member.name}
             alt={member.name}

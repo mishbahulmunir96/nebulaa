@@ -18,7 +18,7 @@ const TeamCard: FC<TeamCardProps> = ({
 }) => {
   return (
     <Card className="max-w-sm">
-      <div className="flex flex-col items-center gap-4 md:flex-row">
+      <div className="flex flex-col items-center gap-1 md:flex-row md:gap-4">
         <Image
           alt={alt}
           height="96"
@@ -27,14 +27,14 @@ const TeamCard: FC<TeamCardProps> = ({
           style={{ objectFit: "cover" }}
           className="mb-3 rounded-full shadow-lg"
         />
-        <div>
+        <div className="text-center md:text-left">
           <h5 className="text-1xl font-semibold tracking-tight text-gray-900 dark:text-white">
             {name}
           </h5>
           <p>{position}</p>
         </div>
       </div>
-      <p className="line-clamp-4 font-normal text-gray-700 dark:text-gray-400">
+      <p className="line-clamp-3 font-normal text-gray-700 dark:text-gray-400 md:line-clamp-4">
         {description}
       </p>
     </Card>
