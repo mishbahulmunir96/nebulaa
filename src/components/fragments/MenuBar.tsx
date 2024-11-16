@@ -48,10 +48,30 @@ const MenuBar: FC<MenuBarProps> = ({ classname }) => {
         ref={menuRef}
         className={`${isOpen ? "flex" : "hidden"} absolute -left-2 top-[52px] flex-col rounded-md bg-white px-3 py-1 md:static md:flex md:flex-row md:items-center md:justify-between md:bg-transparent`}
       >
-        <Menu href={"/"}>Beranda</Menu>
-        <Menu href={"/about"}>About</Menu>
-        <Menu href={"/product"}>Product</Menu>
-        <Menu href={"/team"}>Team</Menu>
+        <Menu
+          href={"/"}
+          classname="rounded-lg md:px-6 md:py-3 transition-all duration-300 ease-in-out hover:font-semibold"
+        >
+          Beranda
+        </Menu>
+        <Menu
+          href={"/about"}
+          classname="rounded-lg md:px-6 md:py-3 transition-all duration-300 ease-in-out hover:font-semibold"
+        >
+          About
+        </Menu>
+        <Menu
+          href={"/product"}
+          classname="rounded-lg md:px-6 md:py-3 transition-all duration-300 ease-in-out hover:font-semibold"
+        >
+          Product
+        </Menu>
+        <Menu
+          href={"/team"}
+          classname="rounded-lg md:px-6 md:py-3 transition-all duration-300 ease-in-out hover:font-semibold"
+        >
+          Team
+        </Menu>
       </ul>
     </div>
   );

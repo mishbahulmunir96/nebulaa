@@ -13,7 +13,7 @@ const FilterList: FC<FilterListProps> = ({
 }) => {
   return (
     <div
-      className={`sticky top-20 z-50 mx-0 flex h-full flex-col rounded-md bg-slate-200/90 p-2 backdrop-blur-sm md:top-24 ${className}`}
+      className={`sticky top-20 z-40 mx-0 flex h-full flex-col rounded-md bg-slate-200/90 p-2 backdrop-blur-sm md:top-24 ${className}`}
     >
       <h3>Filter:</h3>
       <div className="grid grid-cols-2 md:grid-cols-1">

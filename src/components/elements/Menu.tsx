@@ -1,18 +1,19 @@
 import Link from "next/link";
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 
 interface MenuProps {
   href: string;
   children: string;
-  classname?: ReactNode;
+  className?: string;
+  classname?: string;
 }
 
-const Menu: FC<MenuProps> = ({ href, children, classname }) => {
+const Menu: FC<MenuProps> = ({ href, children, className, classname }) => {
   return (
-    <li className="mx-1 my-1 px-4 lg:m-0 lg:p-0">
+    <li className={`mx-1 my-1 md:m-0 md:p-0`}>
       <Link
         href={href}
-        className={`rounded-lg text-lg font-medium text-gray-900 no-underline transition-all duration-300 ease-in-out hover:font-semibold lg:px-6 lg:py-3 lg:text-base ${classname}`}
+        className={`text-lg font-medium text-gray-900 no-underline md:text-base ${classname}`}
       >
         {children}
       </Link>

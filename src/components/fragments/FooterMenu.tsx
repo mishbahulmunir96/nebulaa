@@ -2,7 +2,7 @@ import Menu from "../elements/Menu";
 
 const FooterMenu = () => {
   return (
-    <ul className="mb-2 flex lg:w-1/2">
+    <ul className="mb-2 flex w-full justify-around md:w-1/2">
       <Menu href={"/"} classname="font-normal">
         Beranda
       </Menu>
