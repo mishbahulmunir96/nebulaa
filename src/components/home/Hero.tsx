@@ -42,12 +42,10 @@ const Hero = () => {
             alt="nebulaa"
             width={400}
             height={400}
+            priority
           />
         </div>
       </div>
-
-      {/* <Box className="-bottom-12 right-0 z-30 h-[500px] w-[500px] origin-top-left rotate-[20deg]" />
-      <Box className="-bottom-24 right-48 z-20 h-[500px] w-[200px] origin-top-left rotate-[8deg] bg-blue-950" /> */}
     </Container>
   );
 };
