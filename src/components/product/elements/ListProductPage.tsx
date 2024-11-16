@@ -11,7 +11,7 @@ interface Product {
 
 const ListProductPage = ({ products }: { products: Product[] }) => {
   return (
-    <div className="grid w-5/6 grid-cols-1 justify-between gap-4 md:grid-cols-3">
+    <div className="grid w-full grid-cols-1 justify-between gap-4 md:w-5/6 md:grid-cols-3">
       {products.map((product: Product) => (
         <CardProductPage
           key={product.entryId}

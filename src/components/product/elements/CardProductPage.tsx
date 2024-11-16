@@ -6,7 +6,7 @@ import { FC } from "react";
 interface CardProductPageProps {
   src: string;
   title: string;
-  description: string;
+  description?: string;
   price: number;
   rating?: number;
 }

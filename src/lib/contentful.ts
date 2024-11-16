@@ -73,6 +73,7 @@ export const getProducts = async () => {
     const products = response.items.map((product: ResponseEntry) => ({
       entryId: product.sys.id,
       title: product.fields.title,
+      category: product.fields.category,
       description: product.fields.description,
       thumbnail: "https:" + product.fields.thumbnail.fields.file.url,
       price: product.fields.price,
