@@ -20,12 +20,14 @@ const BlogDetail: FC<BlogDetailProps> = async ({ params }) => {
   }
 
   return (
-    <Container>
-      <Badge color="gray">{blog.category}</Badge>
+    <Container classParent="bg-slate-200 pt-28">
+      <Badge color="green" className="mb-2 w-fit px-1">
+        {blog.category}
+      </Badge>
 
       <h1 className="text-2xl font-bold md:text-4xl">{blog.title}</h1>
 
-      <div className="flex items-center justify-between">
+      <div className="mb-2 mt-8 flex items-center justify-between">
         <p className="text-sm">
           {format(blog.createdAt, "dd MMMM yyyy")} - {blog.author}
         </p>
@@ -40,7 +42,7 @@ const BlogDetail: FC<BlogDetailProps> = async ({ params }) => {
         />
       </div>
 
-      <section className="mb-10">
+      <section className="my-10">
         {documentToReactComponents(blog.content, RICHTEXT_OPTIONS)}
       </section>
     </Container>
