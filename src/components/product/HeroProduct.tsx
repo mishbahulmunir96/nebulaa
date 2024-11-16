@@ -28,7 +28,7 @@ const HeroProduct = () => {
           </p>
         </div>
       </div>
-      <Box className="right-36 z-0 h-[650px] w-[550px] origin-bottom-right rotate-[70deg] bg-blue-950 md:-top-12 md:right-[450px]" />
+      <Box className="-bottom-[500px] right-96 z-0 h-[650px] w-[550px] origin-bottom-right rotate-[70deg] bg-blue-950 md:right-[450px] md:top-0" />
     </Container>
   );
 };
