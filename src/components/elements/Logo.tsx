@@ -15,6 +15,7 @@ const Logo: FC<LogoProps> = ({ classname }) => {
           alt="nebula_logo"
           width={160}
           height={80}
+          priority
         />
       </Link>
     </div>
