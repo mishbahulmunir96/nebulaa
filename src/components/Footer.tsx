@@ -5,7 +5,7 @@ import SocialMedia from "./fragments/SocialMedia";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FCEED5] px-2 md:px-36">
+    <footer className="min-h-52 bg-[#FCEED5] px-2 md:px-36">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between border-b border-slate-500 py-4 md:flex-row md:py-8">
           <FooterMenu />
