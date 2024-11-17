@@ -1,17 +1,17 @@
-import Container from "@/components/Container";
+import { FC } from "react";
 
-const AboutHeroCard = () => {
+interface AboutHeroCardProps {
+  title: string;
+  description: string;
+}
+
+const AboutHeroCard: FC<AboutHeroCardProps> = ({ title, description }) => {
   return (
-    <div className="text-center">
-      <h1 className="mb-12 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl">
-        Tentang Kami
+    <div className="mt-0 w-full text-center">
+      <h1 className="my-6 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl">
+        {title}
       </h1>
-      <p className="mb-8 text-xl font-normal text-slate-900 dark:text-gray-400 md:px-16">
-        Selamat datang di Nebulaa, penyedia layanan terbaik untuk kebutuhan
-        buket, gift, dan penyewaan box hantaran Anda. Kami berdedikasi untuk
-        membantu pelanggan merayakan momen-momen spesial dengan cara yang indah
-        dan penuh makna.
-      </p>
+      <p className="text-xl font-normal text-slate-900">{description}</p>
     </div>
   );
 };
