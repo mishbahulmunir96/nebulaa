@@ -68,7 +68,7 @@ const OurTeam = () => {
   }, []);
 
   return (
-    <Container>
+    <Container classParent="bg-slate-200">
       <Title className="text-center">Team Kami</Title>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
         {teamMembers.map((member, index) => (

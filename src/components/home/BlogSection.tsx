@@ -8,8 +8,8 @@ import Pagination from "@/components/Pagination";
 
 interface BlogSectionProps {
   blogs: Blog[];
-  total: number; // Tambahkan total
-  limit: number; // Tambahkan limit
+  total: number;
+  limit: number;
 }
 
 const BlogSection: FC<BlogSectionProps> = ({ blogs, total, limit }) => {
@@ -22,7 +22,6 @@ const BlogSection: FC<BlogSectionProps> = ({ blogs, total, limit }) => {
           <BlogCard key={index} blog={blog} />
         ))}
       </div>
-      {/* Pindahkan komponen Pagination ke sini */}
       <Pagination limit={limit} total={total} />
     </Container>
   );
