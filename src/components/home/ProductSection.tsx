@@ -7,10 +7,10 @@ const ProductSection = () => {
   return (
     <Container classParent="pt-8 md:pt-20 bg-slate-200">
       <div className="text-center">
-        <SubTitle>Produk Kami</SubTitle>
-        <Title>
+        <Title className="text-base font-medium">Product Kami</Title>
+        <SubTitle className="text-2xl font-bold">
           Dapatkan Product Terbaik Dari Kami Untuk Setiap Momen Spesialmu
-        </Title>
+        </SubTitle>
 
         <ProductHomeCard
           src="/images/buket.webp"

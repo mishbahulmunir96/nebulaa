@@ -25,7 +25,7 @@ const ProductHomeCard: FC<ProductHomeCardProps> = ({
       </div>
 
       <div className="z-30 flex flex-col justify-center p-4 md:w-2/3 md:text-left">
-        <h2 className="mb-2 text-lg font-bold">{title}</h2>
+        <h2 className="mb-2 text-lg font-semibold">{title}</h2>
         <p>{description}</p>
       </div>
     </div>
