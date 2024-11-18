@@ -5,7 +5,6 @@ import Container from "../Container";
 import Title from "../elements/Title";
 import OurTeamCard from "./elements/OurTeamCard";
 
-// Definisikan interface untuk anggota tim
 interface TeamMember {
   src: string;
   alt: string;
@@ -13,15 +12,7 @@ interface TeamMember {
   position: string;
 }
 
-const positions = [
-  "Co-Founder",
-  "CEO",
-  "CTO",
-  "Manager",
-  "Kurir 1",
-  "Kurir 2",
-  // Tambahkan posisi lain jika perlu
-];
+const positions = ["Co-Founder", "CEO", "CTO", "Manager", "Kurir 1", "Kurir 2"];
 
 const OurTeam = () => {
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
