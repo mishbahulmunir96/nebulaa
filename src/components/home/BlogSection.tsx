@@ -1,10 +1,9 @@
+import { Blog } from "@/types/blog";
 import { FC } from "react";
 import Container from "../Container";
 import SubTitle from "../elements/SubTitle";
 import Title from "../elements/Title";
-import { Blog } from "@/types/blog";
 import BlogCard from "./elements/BlogCard";
-import Pagination from "@/components/Pagination";
 
 interface BlogSectionProps {
   blogs: Blog[];
@@ -22,7 +21,6 @@ const BlogSection: FC<BlogSectionProps> = ({ blogs, total, limit }) => {
           <BlogCard key={index} blog={blog} />
         ))}
       </div>
-      <Pagination limit={limit} total={total} />
     </Container>
   );
 };
